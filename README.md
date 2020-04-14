@@ -1,1 +1,1 @@
-# CovLab-Global
+# CovLab
