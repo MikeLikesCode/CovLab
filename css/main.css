@@ -54,6 +54,69 @@ a:hover {
 a.normal{
 
   font-size:23px !important;
+}
+
+.collapse {
+  visibility: visible !important;
+}
+ p.black{
+   color:black;
+ }
+
+ #faqs{
+   margin-top:7vh;
+
+ }
+.faq-quest {
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 18px;
+  background: white;
+  margin: 3%;
+}
+
+.faq-questions {
+  margin-top: 100px;
+}
+.faq-quest {
+  box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.faq-quest h5 {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.faq-quest h5 a {
+  color: #000000;
+}
+.faq-quest .card a {
+  color: #000000;
+}
+.faq-quest h5 a[aria-expanded="true"], .p-bold {
+  font-weight: 600;
+}
+.faq-quest h5 a i {
+  float: right;
+  -webkit-text-stroke: 1px #000000;
+  width: 30px;
+  height: 30px;
+  margin-top: -1%;
+  text-align: center;
+  line-height: 29px;
+  font-size: 18px;
+  color: black;
+
+}
+.faq-quest .card {
+  border: 0;
+}
+
+card card-body p {
+
+  color:black !important;
 
 }
 

@@ -4,12 +4,12 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2020, Codrops
  * http://www.codrops.com
  */
 
- 
+
 var global;
 
 (function(window) {
@@ -76,7 +76,7 @@ var global;
 				else {
 					// invisible pages in the stack
 					page.style.WebkitTransform = 'translate3d(0,75%,-300px)';
-					page.style.transform = 'translate3d(0,75%,-300px)';		
+					page.style.transform = 'translate3d(0,75%,-300px)';
 				}
 			}
 			else {
@@ -84,7 +84,7 @@ var global;
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
-			
+
 			if( posIdx !== -1 ) {
 				page.style.opacity = parseFloat(1 - 0.1 * posIdx);
 			}
@@ -98,7 +98,7 @@ var global;
 	function initEvents() {
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
-		
+
 		// navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
@@ -124,11 +124,11 @@ var global;
 		});
 
 
-				
+
 
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
-			if( !isMenuOpen ) return; 
+			if( !isMenuOpen ) return;
 			var keyCode = ev.keyCode || ev.which;
 			if( keyCode === 27 ) {
 				closeMenu();
@@ -154,7 +154,7 @@ var global;
 		// stack gets the class "pages-stack--open" to add the transitions
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
-		classie.add(nav, 'pages-nav--open');                                   
+		classie.add(nav, 'pages-nav--open');
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
@@ -166,10 +166,10 @@ var global;
 		}
 	}
 
-	
-	
 
-	
+
+
+
 
 	// closes the menu
 	function closeMenu() {
@@ -194,14 +194,14 @@ var global;
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
 			page.style.transform = 'translate3d(0,100%,0)';
 		}
-		
+
 		console.log(id);
 
 		// set current
 		if( id ) {
 			current = futureCurrent;
 		}
-		
+
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');
@@ -213,7 +213,7 @@ var global;
 		});
 	}
 
-	
+
 
 
 
@@ -253,7 +253,7 @@ var global;
 	});
 
 	//Villager goes HMMMMMMMMMMMM...
-		
+
 
 	init();
 
@@ -261,7 +261,15 @@ var global;
 
 
 
-	
-	
+
+
 
 })(window);
+
+$(document).ready(function(){
+  $('.collapse').on('shown.bs.collapse', function(){
+    $(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
+  }).on('hidden.bs.collapse', function(){
+    $(this).parent().find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
+  });
+});

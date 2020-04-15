@@ -126,8 +126,8 @@
         return new s(this.x + t.x, this.y + t.y)
     };
     var h = function(t) {
-        var i = .1,
-            h = .1;
+        var i = .000001,
+            h = .000001;
         this.vel = new s((Math.random() > .5 ? 1 : -1) * (.2 + .25 * Math.random()), (Math.random() > .5 ? 1 : -1) * (.2 + Math.random())), this.pos = new s(.2 * t.width + Math.random() * t.width * .6, .2 * t.height + Math.random() * t.height * .6), this.size = t.wh / 15 + (1.4 * Math.random() + .1) * (t.wh / 15), this.width = t.width, this.height = t.height
     };
     h.prototype.move = function() {
