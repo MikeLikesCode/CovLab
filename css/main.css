@@ -68,9 +68,7 @@ a.normal{
 
  }
 
-.section-head {
-  margin-bottom: 60px;
-}
+
 .section-head h4 {
   position: relative;
   padding:0;
@@ -177,7 +175,7 @@ p.service_text{
 
 .sponsors{
 
-  margin-top:15vh;
+  margin-top:10vh;
 
 }
 .sponsor-body {
@@ -186,7 +184,6 @@ p.service_text{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 15vh;
   justify-content: space-around;
   align-items: center;
 }
@@ -196,7 +193,7 @@ p.service_text{
   justify-content: center;
   align-items: center;
   margin: 1rem 1.5rem;
-  flex: 150px;
+  flex: 300px;
 }
 
 .sponsor-img img {
