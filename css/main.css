@@ -159,10 +159,12 @@ p.service_text{
   border-radius: 50px;
 }
 
-.item p{
-  font-size:15px;
-  line-height:26px;
+.item p {
+  font-size: 1.6rem;
+  line-height: 26px;
+  word-wrap: break-word;
 }
+
 .item h6 {
   margin-bottom: 20px;
   color: black;
