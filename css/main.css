@@ -159,6 +159,81 @@ p.service_text{
   border-radius: 50px;
 }
 
+.sponsor {
+  margin: 1.5rem 0 2.5rem 0;
+  min-height: 12rem;
+
+}
+
+.sponsor:first-of-type {
+  margin-top: 0;
+}
+
+.sponsor header {
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  background-color: #002448;
+}
+
+.sponsors{
+
+  margin-top:15vh;
+
+}
+.sponsor-body {
+  border-top: 0;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sponsor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1.5rem;
+  flex: 150px;
+}
+
+.sponsor-img img {
+  transition: all 0.2s ease-in-out;
+}
+
+.sponsor-img:hover img {
+  filter: grayscale(100%) opacity(75%);
+}
+
+.sponsor.no-borders header {
+  border: 0;
+}
+
+.sponsor.no-borders .sponsor-body {
+  border: 0;
+}
+
+.sponsor.accents header {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.sponsor.accents:nth-of-type(2) header {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.sponsor.accents:nth-of-type(3) header {
+  border-top: 5px solid #23d4ff;
+}
+
+.sponsor.accents:nth-of-type(4) header {
+  border-top: 5px solid rgba(168, 148, 61, 0.5);
+}
+
+
 .item p {
   font-size: 1.6rem;
   line-height: 26px;
@@ -786,9 +861,6 @@ button {
     transition: .25s;
 }
 
-button:hover {
-    color: var(--gray-color);
-}
 
 header {
     width: 100%;
@@ -854,7 +926,6 @@ p {
 }
 
 .header-menu-link:hover {
-    color: var(--dark-color);
     text-decoration: underline;
 }
 
@@ -869,7 +940,6 @@ p {
 
 .header-img {
     border-radius: 50%;
-    box-shadow: 0 0 0 .5em var(--border-color-dark), 0 0 0 1em var(--border-color-normal), 0 0 0 1.5em var(--border-color-light);
     height: 15em;
     margin: 2em auto;
     overflow: hidden;
